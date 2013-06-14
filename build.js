@@ -37,6 +37,6 @@
     return contents;
   },
   wrap: {
-    end: "define('zepto', ['zepto_src', 'zepto_src/ajax', 'zepto_src/fx', 'zepto_src/fx_methods'], function(Zepto) { return Zepto; })"
+    end: "define('streamhub-zepto', ['zepto_src', 'zepto_src/ajax', 'zepto_src/fx', 'zepto_src/fx_methods'], function(Zepto) { return Zepto; })"
   }
 })
