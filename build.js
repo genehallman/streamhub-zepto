@@ -8,7 +8,7 @@
     main: "zepto"
   }],
   baseUrl: '.',
-  include: ['zepto_src', 'zepto_src/ajax', 'zepto_src/fx', 'zepto_src/fx_methods'],
+  include: ['zepto_src', 'zepto_src/ajax', 'zepto_src/fx', 'zepto_src/fx_methods', 'zepto_src/event'],
   exclude: ['almond'],
   stubModules: ['text', 'hgn'],
   out: "build/zepto.min.js",
@@ -37,6 +37,6 @@
     return contents;
   },
   wrap: {
-    end: "define('streamhub-zepto', ['zepto_src', 'zepto_src/ajax', 'zepto_src/fx', 'zepto_src/fx_methods'], function(Zepto) { return Zepto; })"
+    end: "define('streamhub-zepto', ['zepto_src', 'zepto_src/ajax', 'zepto_src/fx', 'zepto_src/fx_methods', 'zepto_src/event'], function(Zepto) { return Zepto; })"
   }
 })
