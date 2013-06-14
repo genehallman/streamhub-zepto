@@ -1,1 +1,2 @@
-zepto/
+node_modules/
+*.log

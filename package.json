@@ -1,0 +1,20 @@
+{
+  "name": "streamhub-zepto",
+  "description": "Livefyre Streamhub Zepto",
+  "author": "Livefyre <support@livefyre.com>",
+  "contributors": {
+    "name": "Gene Hallman",
+    "email": "gene@livefyre.com"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "requirejs": "~2.1.6",
+    "zepto": "git://github.com/madrobby/zepto.git#v1.0",
+    "almond": "~0.2.5",
+    "http-server": "*"
+  },
+  "scripts": {
+    "build": "./node_modules/requirejs/bin/r.js -o ./build.js && (gzip -c9 build/zepto.min.js > build/zepto.min.gz.js)",
+    "start": "./node_modules/http-server/bin/http-server ."
+  }
+}
